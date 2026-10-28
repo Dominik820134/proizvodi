@@ -33,8 +33,8 @@ public class Main {
             System.out.println("Odbijeno: " + e.getMessage());
         }
         
-        System.out.printf("Ukupna vrijednost za (%s): %.2f EUR%n", drugi.getNaziv(), drugi.ukupnavrijednost());
-        System.out.printf("Ukupna vrijednost uz 15%% popusta (%s): %.2f EUR%n", drugi.getNaziv(), drugi.ukupnavrijednost(15));
+        System.out.printf("Ukupna vrijednost za (%s): %.2f EUR%n", drugi.getNaziv(), drugi.ukupnaVrijednost());
+        System.out.printf("Ukupna vrijednost uz 15%% popusta (%s): %.2f EUR%n", drugi.getNaziv(), drugi.ukupnaVrijednost(15));
         
         System.out.println("Broj proizvoda: " + Proizvod.getBrojProizvoda());
         System.out.println("Je li P042 ispravna šifra? " + Proizvod.ispravnaSifra("P042"));

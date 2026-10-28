@@ -71,15 +71,15 @@ public class Proizvod {
         kolicina -= count;
     }
 
-    public double ukupnavrijednost() {
+    public double ukupnaVrijednost() {
         return cijena * kolicina;
     }
 
-    public double ukupnavrijednost(double popust) {
+    public double ukupnaVrijednost(double popust) {
         if (popust < 0 || popust > 100) {
             throw new IllegalArgumentException("Popust mora biti između 0 i 100.");
         }
-        return ukupnavrijednost() * (1 - popust / 100);
+        return ukupnaVrijednost() * (1 - popust / 100);
     }
 
     public String opis() {
